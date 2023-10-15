@@ -1,0 +1,31 @@
+.chip-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 8px 0 12px 0;
+  padding: 0 -8px -8px 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--borderRadiusLarge);
+  background-color: var(--chip);
+  color: var(--text-chip);
+  padding: 0 12px;
+  height: 32px;
+  font-size: 14px;
+  margin: 0 8px 8px 0;
+}
+
+.chip svg {
+  fill: var(--text-chip);
+  height: 16px;
+  width: 16px;
+}
+
+.chip-image-wrapper {
+  height: 16px;
+  width: 16px;
+  margin: 0 8px 0 0;
+}

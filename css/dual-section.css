@@ -1,0 +1,37 @@
+.dual-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  @media only screen and (min-width: 870px) {
+    align-items: center;
+    flex-direction: row;
+    gap: 48px;
+  }
+}
+
+.dual-section-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 38em; /* Same as max width of paragraphs */
+}
+
+.dual-section-extra-wrapper {
+  display: flex;
+  justify-content: center;
+  order: 0;
+  @media only screen and (max-width: 869px) {
+    order: 1;
+  }
+}
+
+.dual-section-extra-wrapper.mobile-extra-on-top {
+  @media only screen and (max-width: 869px) {
+    order: -1;
+  }
+}
+
+.dual-section-extra-inner-wrapper {
+  max-width: 100%;
+  align-self: flex-start;
+}
